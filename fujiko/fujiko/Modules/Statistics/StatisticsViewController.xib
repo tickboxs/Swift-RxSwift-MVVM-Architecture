@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="barChartView" destination="ZUA-d1-91D" id="grQ-5e-nNQ"/>
+                <outlet property="completedItemView" destination="zCC-V8-5KB" id="lzW-Ps-Yyg"/>
+                <outlet property="inProgressItemView" destination="mw3-OF-M2x" id="gIW-yy-aaN"/>
+                <outlet property="inReviewItemView" destination="kcb-gb-tqP" id="a1A-cI-lSb"/>
+                <outlet property="todoItemView" destination="q11-N4-ru2" id="7nk-J9-9dc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3KR-Rh-gzr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q11-N4-ru2" customClass="StatisticsItemView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="37" y="665" width="160" height="160"/>
+                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q11-N4-ru2" secondAttribute="height" multiplier="1:1" id="n6K-HI-WNd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="statusTitle" value="TO DO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                            <real key="value" value="99"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-OF-M2x" customClass="StatisticsItemView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="37" y="485" width="160" height="160"/>
+                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mw3-OF-M2x" secondAttribute="height" multiplier="1:1" id="SS1-kp-IAK"/>
+                        <constraint firstAttribute="height" constant="160" id="nAw-wQ-07y"/>
+                        <constraint firstAttribute="width" constant="160" id="y4j-sn-T0L"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                            <real key="value" value="21"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="statusTitle" value="IN PROGRESS"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcb-gb-tqP" customClass="StatisticsItemView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="217" y="665" width="160" height="160"/>
+                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kcb-gb-tqP" secondAttribute="height" multiplier="1:1" id="GXn-Yn-1t0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="statusTitle" value="IN REVIEW"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                            <real key="value" value="5.2000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-d1-91D" customClass="BarChartView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="37" y="161.5" width="340" height="303.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-MM-LxX" customClass="SlidingTabBar" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="37" y="64" width="340" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="xmd-lH-JdH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                            <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titles" value="HELLO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Today,This Week,All Time"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 December 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7J-Eh-Sms">
+                    <rect key="frame" x="37" y="122" width="340" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCC-V8-5KB" customClass="StatisticsItemView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="217" y="485" width="160" height="160"/>
+                    <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Dql-ik-qEr"/>
+                        <constraint firstAttribute="width" secondItem="zCC-V8-5KB" secondAttribute="height" multiplier="1:1" id="PzX-hS-Nde"/>
+                        <constraint firstAttribute="width" constant="160" id="cLb-On-zUk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="statusTitle" value="COMPLETED"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                            <real key="value" value="45.100000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l7J-Eh-Sms" firstAttribute="top" secondItem="LJf-MM-LxX" secondAttribute="bottom" constant="20" id="0PM-cG-YHB"/>
+                <constraint firstItem="kcb-gb-tqP" firstAttribute="top" secondItem="zCC-V8-5KB" secondAttribute="bottom" constant="20" id="0VX-h8-0er"/>
+                <constraint firstItem="LJf-MM-LxX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="5KB-P7-KDm"/>
+                <constraint firstItem="ZUA-d1-91D" firstAttribute="top" secondItem="l7J-Eh-Sms" secondAttribute="bottom" constant="10" id="6zG-Od-XYf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l7J-Eh-Sms" secondAttribute="trailing" constant="37" id="7iG-Qu-bpU"/>
+                <constraint firstItem="kcb-gb-tqP" firstAttribute="height" secondItem="q11-N4-ru2" secondAttribute="height" id="974-Lb-J3k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zCC-V8-5KB" secondAttribute="trailing" constant="37" id="9B4-2Y-aWR"/>
+                <constraint firstItem="kcb-gb-tqP" firstAttribute="leading" secondItem="q11-N4-ru2" secondAttribute="trailing" constant="20" id="Bn1-fj-u2G"/>
+                <constraint firstItem="ZUA-d1-91D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="Gg8-jx-lU9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kcb-gb-tqP" secondAttribute="trailing" constant="37" id="QzH-13-FOo"/>
+                <constraint firstItem="l7J-Eh-Sms" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="RdL-y6-2nH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q11-N4-ru2" secondAttribute="bottom" multiplier="1:1" constant="37" id="Rki-Nn-ulV"/>
+                <constraint firstItem="kcb-gb-tqP" firstAttribute="width" secondItem="q11-N4-ru2" secondAttribute="width" id="SRf-Ju-uh5"/>
+                <constraint firstItem="q11-N4-ru2" firstAttribute="top" secondItem="mw3-OF-M2x" secondAttribute="bottom" constant="20" id="dGi-5b-ehz"/>
+                <constraint firstItem="q11-N4-ru2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="gJF-92-Bso"/>
+                <constraint firstItem="mw3-OF-M2x" firstAttribute="top" secondItem="ZUA-d1-91D" secondAttribute="bottom" constant="20" id="jcz-w8-bmJ"/>
+                <constraint firstItem="zCC-V8-5KB" firstAttribute="leading" secondItem="mw3-OF-M2x" secondAttribute="trailing" constant="20" id="k04-t5-PHG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kcb-gb-tqP" secondAttribute="bottom" constant="37" id="kws-5U-uPB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZUA-d1-91D" secondAttribute="trailing" constant="37" id="nrb-8A-HGx"/>
+                <constraint firstItem="mw3-OF-M2x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="sf4-mP-ke2"/>
+                <constraint firstItem="LJf-MM-LxX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="u4A-oL-W7u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LJf-MM-LxX" secondAttribute="trailing" constant="37" id="xph-MR-aAi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="197" id="KGk-i7-Jjw" customClass="TaskCell" customModule="fujiko" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wY-s4-4VG" customClass="View" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="470" height="177"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.73726195100000003" green="0.73724585769999995" blue="0.73724901679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBJ-U7-bxB" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="127" y="144.5" width="39" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <state key="normal" title="4" image="view">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG4-nm-6fL" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="85" y="144.5" width="32" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <state key="normal" title="2" image="attachments">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website Redesign v2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keb-tN-Tjj" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="30" y="18" width="450" height="23"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-0g-dXD" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="50" y="142" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="iLf-FW-OOY"/>
+                            <constraint firstAttribute="width" constant="25" id="otZ-5t-wz0"/>
+                        </constraints>
+                        <state key="normal" image="menu"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKC-qD-aKf" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="341" y="147" width="119" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <state key="normal" title="Today – 10:30" image="time">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bh9-28-5eH">
+                        <rect key="frame" x="20" y="121" width="470" height="1"/>
+                        <color key="backgroundColor" red="0.93726366760000002" green="0.93724346160000005" blue="0.93724745509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Sei-hN-5vu"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liam" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-e3-AKT" customClass="ImageView" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="50" y="61" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="J6R-Py-F35"/>
+                            <constraint firstAttribute="height" constant="40" id="TGE-Wh-yb4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="7wY-s4-4VG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5ln-gz-LZo"/>
+                    <constraint firstItem="mG4-nm-6fL" firstAttribute="centerY" secondItem="kvg-0g-dXD" secondAttribute="centerY" id="6K0-ct-o4j"/>
+                    <constraint firstItem="kvg-0g-dXD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="6c1-dO-D4F"/>
+                    <constraint firstItem="4ay-e3-AKT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="87X-dp-8dO"/>
+                    <constraint firstAttribute="bottom" secondItem="7wY-s4-4VG" secondAttribute="bottom" constant="10" id="A1K-4m-WyC"/>
+                    <constraint firstItem="mG4-nm-6fL" firstAttribute="leading" secondItem="kvg-0g-dXD" secondAttribute="trailing" constant="10" id="BzG-Ba-9gR"/>
+                    <constraint firstAttribute="trailing" secondItem="keb-tN-Tjj" secondAttribute="trailing" constant="30" id="Fmj-CX-JbO"/>
+                    <constraint firstItem="keb-tN-Tjj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="LGf-1w-oaR"/>
+                    <constraint firstItem="keb-tN-Tjj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="T75-Je-smv"/>
+                    <constraint firstAttribute="trailing" secondItem="JKC-qD-aKf" secondAttribute="trailing" constant="50" id="TU3-oL-CP9"/>
+                    <constraint firstItem="aBJ-U7-bxB" firstAttribute="centerY" secondItem="mG4-nm-6fL" secondAttribute="centerY" id="Y4V-pD-Eg9"/>
+                    <constraint firstItem="7wY-s4-4VG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZXp-Su-AlJ"/>
+                    <constraint firstAttribute="trailing" secondItem="7wY-s4-4VG" secondAttribute="trailing" constant="20" id="fhh-6b-9KN"/>
+                    <constraint firstAttribute="bottom" secondItem="kvg-0g-dXD" secondAttribute="bottom" constant="30" id="geq-dF-N2Q"/>
+                    <constraint firstItem="aBJ-U7-bxB" firstAttribute="leading" secondItem="mG4-nm-6fL" secondAttribute="trailing" constant="10" id="nwe-4X-77R"/>
+                    <constraint firstItem="4ay-e3-AKT" firstAttribute="top" secondItem="keb-tN-Tjj" secondAttribute="bottom" constant="20" id="oSo-70-MBq"/>
+                    <constraint firstAttribute="bottom" secondItem="JKC-qD-aKf" secondAttribute="bottom" constant="30" id="p3V-hT-A5X"/>
+                    <constraint firstItem="bh9-28-5eH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="vSC-ra-78U"/>
+                    <constraint firstItem="bh9-28-5eH" firstAttribute="top" secondItem="4ay-e3-AKT" secondAttribute="bottom" constant="20" id="vUk-sv-uAU"/>
+                    <constraint firstItem="kvg-0g-dXD" firstAttribute="top" secondItem="bh9-28-5eH" secondAttribute="bottom" constant="20" id="vas-4b-mms"/>
+                    <constraint firstItem="bh9-28-5eH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="x8f-z4-AXs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="attachmentsButton" destination="mG4-nm-6fL" id="lOG-it-uqG"/>
+                <outlet property="moreButton" destination="kvg-0g-dXD" id="x52-Mc-rLd"/>
+                <outlet property="taskNameLabel" destination="keb-tN-Tjj" id="VeA-32-meE"/>
+                <outlet property="timestampButton" destination="JKC-qD-aKf" id="qC8-F5-BFk"/>
+                <outlet property="viewButton" destination="aBJ-U7-bxB" id="2hl-IG-XEq"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="100.11160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="attachments" width="13" height="16"/>
+        <image name="liam" width="35" height="35"/>
+        <image name="menu" width="16" height="14"/>
+        <image name="time" width="15" height="15"/>
+        <image name="view" width="20" height="14"/>
+    </resources>
+</document>

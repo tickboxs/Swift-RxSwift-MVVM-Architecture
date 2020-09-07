@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="83" id="KGk-i7-Jjw" customClass="ChatCell" customModule="fujiko" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lauren" translatesAutoresizingMaskIntoConstraints="NO" id="FNf-Vz-0YA">
+                        <rect key="frame" x="35" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="52W-Bw-csZ"/>
+                            <constraint firstAttribute="height" constant="45" id="sXo-9l-Uat"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Susan, any update on the new design?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoB-td-wbi" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="90" y="15" width="195" height="53"/>
+                        <color key="backgroundColor" red="0.94902855159999999" green="0.94900804760000002" blue="0.94901210069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FNf-Vz-0YA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="C9h-64-aJC"/>
+                    <constraint firstAttribute="trailing" secondItem="VoB-td-wbi" secondAttribute="trailing" constant="35" id="DxZ-49-X0P"/>
+                    <constraint firstItem="VoB-td-wbi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="EDp-Ig-GeY"/>
+                    <constraint firstItem="FNf-Vz-0YA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="fCV-An-6TA"/>
+                    <constraint firstAttribute="bottom" secondItem="VoB-td-wbi" secondAttribute="bottom" constant="15" id="jc7-bf-WYs"/>
+                    <constraint firstItem="VoB-td-wbi" firstAttribute="leading" secondItem="FNf-Vz-0YA" secondAttribute="trailing" constant="10" id="mrI-er-nnW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lauren" width="35" height="35"/>
+    </resources>
+</document>

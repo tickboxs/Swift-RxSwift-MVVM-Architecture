@@ -1,0 +1,69 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+# Add this statement to ignore all warnings related to cocoapod third party
+inhibit_all_warnings!
+
+target 'fujiko' do
+  use_frameworks!
+
+  # Layout
+  pod 'SnapKit', '~> 5.0.0' # https://github.com/SnapKit/SnapKit
+
+  # Rx
+  pod 'RxSwift', '~> 5' # https://github.com/ReactiveX/RxSwift
+  pod 'RxSwiftExt', '~> 5' # https://github.com/RxSwiftCommunity/RxSwiftExt
+  pod 'RxCocoa', '~> 5' # https://github.com/ReactiveX/RxSwift
+  pod 'Action', '~> 4.0.0' # https://github.com/RxSwiftCommunity/Action
+  pod 'RxDataSources', '~> 4.0' # https://github.com/RxSwiftCommunity/RxDataSources
+  pod 'RxBiBinding', '~> 0.2.5' # https://github.com/RxSwiftCommunity/RxBiBinding
+  pod 'RxAnimated', '~> 0.7.0' # https://github.com/RxSwiftCommunity/RxAnimated
+  pod 'RxKeyboard', '~> 1.0.0' # https://github.com/RxSwiftCommunity/RxKeyboard
+  pod 'RxReachability', '~> 1.0.0' # https://github.com/RxSwiftCommunity/RxReachability
+  
+  # Animation
+  pod 'Hero', '~> 1.5.0' # https://github.com/HeroTransitions/Hero
+#  pod 'Spring','~> 1.0.6' # https://github.com/MengTo/Spring
+
+
+  # i18n
+  pod 'Localize-Swift', '~> 3.1.0' # https://github.com/marmelroy/Localize-Swift
+  
+  # Utilities
+  pod 'YYKit', '~> 1.0.9' # https://github.com/ibireme/YYKit
+  
+  # DI
+  pod 'Swinject','~> 2.7.1' # https://github.com/Swinject/Swinject
+  
+  # UI
+  pod 'JTAppleCalendar', '~> 8.0.3' # https://github.com/patchthecode/JTAppleCalendar
+  pod 'CRBoxInputView', '1.1.7' # https://github.com/CRAnimation/CRBoxInputView
+  pod 'SVProgressHUD' # https://github.com/SVProgressHUD/SVProgressHUD
+  pod 'DatePickerDialog','~> 3.0' # https://github.com/squimer/DatePickerDialog-iOS-Swift
+  
+  # Tools
+  pod 'R.swift', '~> 5.1.0'  # https://github.com/mac-cain13/R.swift
+  pod 'SwiftLint'  # https://github.com/realm/SwiftLint
+  pod 'Aspects', '~> 1.4.1' # https://github.com/steipete/Aspects
+
+  # Network
+  pod 'SwiftyJSON', '~> 5.0.0' # https://github.com/SwiftyJSON/SwiftyJSON
+  pod 'RxAlamofire', '~> 5.1.0' # https://github.com/RxSwiftCommunity/RxAlamofire
+  
+  # Logging
+  pod 'CocoaLumberjack/Swift', '~> 3.6.1'  # https://github.com/CocoaLumberjack/CocoaLumberjack
+  
+  target 'fujikoTests' do
+    inherit! :search_paths
+    
+    pod 'RxBlocking', '~> 5' # https://github.com/ReactiveX/RxSwift
+    pod 'RxTest', '~> 5' # https://github.com/ReactiveX/RxSwift
+    pod 'SwiftyMocky', '~> 3.5.0' # https://github.com/MakeAWishFoundation/SwiftyMocky
+    
+  end
+
+  target 'fujikoUITests' do
+    # Pods for testing
+  end
+
+end

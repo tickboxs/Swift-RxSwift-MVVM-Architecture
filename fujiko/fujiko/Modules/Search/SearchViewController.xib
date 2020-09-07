@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="3IT-ez-grz" id="Mt5-d7-o98"/>
+                <outlet property="tableView" destination="gyj-J4-nt5" id="PrR-wZ-BOS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9wu-em-08R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gyj-J4-nt5" customClass="TableView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search..." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IT-ez-grz" customClass="SearchBar" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="20" y="64" width="374" height="60"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="pz9-yu-U9U"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="gyj-J4-nt5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5L8-xE-BAt"/>
+                <constraint firstItem="gyj-J4-nt5" firstAttribute="top" secondItem="3IT-ez-grz" secondAttribute="bottom" constant="10" id="G9y-8Z-SEI"/>
+                <constraint firstItem="3IT-ez-grz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Rcg-k2-lnN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gyj-J4-nt5" secondAttribute="trailing" id="WA1-be-pFs"/>
+                <constraint firstItem="3IT-ez-grz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="WQh-Ap-cbi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gyj-J4-nt5" secondAttribute="bottom" id="sUF-mt-AZ5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3IT-ez-grz" secondAttribute="trailing" constant="20" id="wk4-sz-NYP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>

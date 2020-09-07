@@ -1,0 +1,184 @@
+PODS:
+  - Action (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - Alamofire (4.9.1)
+  - Aspects (1.4.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - CRBoxInputView (1.1.7):
+    - Masonry
+  - DatePickerDialog (3.0)
+  - Differentiator (4.0.1)
+  - Hero (1.5.0)
+  - JTAppleCalendar (8.0.3)
+  - Localize-Swift (3.1.0)
+  - Masonry (1.1.0)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - ReachabilitySwift (4.3.1)
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxAnimated (0.7.0):
+    - RxAnimated/Core (= 0.7.0)
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxAnimated/Core (0.7.0):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxBiBinding (0.2.5):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxBlocking (5.1.0):
+    - RxSwift (~> 5)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxReachability (1.0.0):
+    - ReachabilitySwift (~> 4.3.1)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - RxTest (5.1.0):
+    - RxSwift (~> 5)
+  - SnapKit (5.0.1)
+  - Sourcery (0.17.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftLint (0.39.1)
+  - SwiftyJSON (5.0.0)
+  - SwiftyMocky (3.5.0):
+    - SwiftyMocky/Core (= 3.5.0)
+  - SwiftyMocky/Core (3.5.0):
+    - Sourcery (>= 0.17)
+  - Swinject (2.7.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Action (~> 4.0.0)
+  - Aspects (~> 1.4.1)
+  - CocoaLumberjack/Swift (~> 3.6.1)
+  - CRBoxInputView (= 1.1.7)
+  - DatePickerDialog (~> 3.0)
+  - Hero (~> 1.5.0)
+  - JTAppleCalendar (~> 8.0.3)
+  - Localize-Swift (~> 3.1.0)
+  - R.swift (~> 5.1.0)
+  - RxAlamofire (~> 5.1.0)
+  - RxAnimated (~> 0.7.0)
+  - RxBiBinding (~> 0.2.5)
+  - RxBlocking (~> 5)
+  - RxCocoa (~> 5)
+  - RxDataSources (~> 4.0)
+  - RxKeyboard (~> 1.0.0)
+  - RxReachability (~> 1.0.0)
+  - RxSwift (~> 5)
+  - RxSwiftExt (~> 5)
+  - RxTest (~> 5)
+  - SnapKit (~> 5.0.0)
+  - SVProgressHUD
+  - SwiftLint
+  - SwiftyJSON (~> 5.0.0)
+  - SwiftyMocky (~> 3.5.0)
+  - Swinject (~> 2.7.1)
+  - YYKit (~> 1.0.9)
+
+SPEC REPOS:
+  trunk:
+    - Action
+    - Alamofire
+    - Aspects
+    - CocoaLumberjack
+    - CRBoxInputView
+    - DatePickerDialog
+    - Differentiator
+    - Hero
+    - JTAppleCalendar
+    - Localize-Swift
+    - Masonry
+    - R.swift
+    - R.swift.Library
+    - ReachabilitySwift
+    - RxAlamofire
+    - RxAnimated
+    - RxBiBinding
+    - RxBlocking
+    - RxCocoa
+    - RxDataSources
+    - RxKeyboard
+    - RxReachability
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxTest
+    - SnapKit
+    - Sourcery
+    - SVProgressHUD
+    - SwiftLint
+    - SwiftyJSON
+    - SwiftyMocky
+    - Swinject
+    - YYKit
+
+SPEC CHECKSUMS:
+  Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  CRBoxInputView: 72b35e2f3df36739a444eadefc9ef0dbf1fe576e
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
+  RxAnimated: 8540892468e906e7404595bc51ed4b36b3737ab5
+  RxBiBinding: 6cc627d9e0dfa0b2ce8470cd7e539f3cb100f782
+  RxBlocking: 5ef131267220f92ef68531dd6afeaf407cd6b41a
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxReachability: 21d3e96f39bc166a21c357e923f47dec148ca97b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxTest: d5e1c9c1880de2751041fa485d476ce006967b31
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SwiftyMocky: f277174040db328a9da04ce8efa81b6d6d5b9d7d
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: fb53ff477e95ff1b5f060a947b161f79c7aa1a21
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,58 @@
+/* 
+  i18n.strings
+  fujiko
+
+  Created by Charlie Cai on 14/3/20.
+  Copyright © 2020 tickboxs. All rights reserved.
+*/
+
+slogen_header = "管理你的任务";
+slogen_description = "组织和简单化任务流程.团队协作和实时消息反馈";
+
+login = "登录";
+signUp = "注册";
+
+incorrect_email_format = "错误的邮箱格式";
+incorrect_password_format = "错误的密码格式.密码只能包含6-20位英文字母或者数字或者以下特殊字符 !@#$&_-";
+email_or_password_wrong = "邮箱或密码错误";
+
+email = "邮箱";
+password = "密码";
+name = "名字";
+code_resent = "激活码已重发";
+success = "成功";
+
+dashboard = "主页";
+statistics = "统计";
+calendar = "日历";
+profile = "个人";
+settings = "设置";
+
+search = "搜索";
+notifications = "通知";
+message = "消息";
+invite = "邀请";
+add_project = "新建项目";
+add_task = "新建任务";
+
+verify_header = "验证账户";
+verify_description = "请在邮箱中查找我们发送的验证码";
+not_get_code = "没有收到验证码?";
+resend = "重发";
+
+role = "角色";
+team = "团队";
+status = "状态";
+member_since = "注册时间";
+chat = "聊天";
+call = "电话";
+
+reminders = "提醒";
+dark_mode = "夜间模式";
+help = "帮助";
+privacy = "隐私";
+terms_conditions = "条款";
+
+dismiss = "关闭";
+
+not_listed = "查找不到?输入邮箱来邀请成员";

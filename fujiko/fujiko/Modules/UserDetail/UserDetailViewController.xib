@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="callButton" destination="007-DE-gRd" id="VwO-fz-D6o"/>
+                <outlet property="chatButton" destination="g1H-9g-l1k" id="LpT-Vp-XWC"/>
+                <outlet property="slidingTabBar" destination="P2O-Il-3fE" id="Hgv-pz-QZq"/>
+                <outlet property="tableView" destination="z6m-5I-8Uj" id="4Ow-GV-VLo"/>
+                <outlet property="userEmailLabel" destination="P5m-tA-xdN" id="ylS-WW-IRq"/>
+                <outlet property="userNameLabel" destination="ofz-bW-r7w" id="jDb-uf-79q"/>
+                <outlet property="view" destination="C56-8s-XbM" id="xqK-Qv-FmE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="C56-8s-XbM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z6m-5I-8Uj" customClass="TableView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="dtc-dE-VBy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brian" translatesAutoresizingMaskIntoConstraints="NO" id="s3t-bp-ZM0" customClass="ImageView" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="132" y="30" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="27B-T6-sEp"/>
+                                    <constraint firstAttribute="height" constant="150" id="gYX-N7-bsn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charlie Cai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-bW-r7w" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="30" y="200" width="354" height="34"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cai.charlie@hotmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5m-tA-xdN" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="30" y="234" width="354" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.60784906149999995" green="0.60783559080000005" blue="0.60783821339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2O-Il-3fE" customClass="SlidingTabBar" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="50" y="276.5" width="207" height="35"/>
+                                <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4q9-8R-2YR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Summary,Projects"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                        <color key="value" red="0.60393500330000005" green="0.60783344510000004" blue="0.60783833269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.088838972150000001" green="0.48133838179999999" blue="0.87455040220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="P2O-Il-3fE" firstAttribute="top" secondItem="P5m-tA-xdN" secondAttribute="bottom" constant="20" id="1Pr-di-bQm"/>
+                            <constraint firstAttribute="trailing" secondItem="ofz-bW-r7w" secondAttribute="trailing" constant="30" id="Me6-FN-fBh"/>
+                            <constraint firstItem="s3t-bp-ZM0" firstAttribute="top" secondItem="dtc-dE-VBy" secondAttribute="top" constant="30" id="O54-bZ-1oX"/>
+                            <constraint firstItem="P5m-tA-xdN" firstAttribute="leading" secondItem="dtc-dE-VBy" secondAttribute="leading" constant="30" id="QM3-mD-3wq"/>
+                            <constraint firstItem="ofz-bW-r7w" firstAttribute="top" secondItem="s3t-bp-ZM0" secondAttribute="bottom" constant="20" id="eCR-I3-Eok"/>
+                            <constraint firstItem="P2O-Il-3fE" firstAttribute="leading" secondItem="dtc-dE-VBy" secondAttribute="leading" constant="50" id="gA6-3S-0iv"/>
+                            <constraint firstAttribute="trailing" secondItem="P5m-tA-xdN" secondAttribute="trailing" constant="30" id="nyB-Mz-lbs"/>
+                            <constraint firstItem="ofz-bW-r7w" firstAttribute="leading" secondItem="dtc-dE-VBy" secondAttribute="leading" constant="30" id="ogn-fa-rAK"/>
+                            <constraint firstItem="P5m-tA-xdN" firstAttribute="top" secondItem="ofz-bW-r7w" secondAttribute="bottom" id="qVv-mL-5wQ"/>
+                            <constraint firstItem="s3t-bp-ZM0" firstAttribute="centerX" secondItem="dtc-dE-VBy" secondAttribute="centerX" id="smW-Tr-ojV"/>
+                            <constraint firstItem="P2O-Il-3fE" firstAttribute="width" secondItem="dtc-dE-VBy" secondAttribute="width" multiplier="0.5" id="vYH-oJ-Rd0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.81177234649999996" green="0.81175476310000005" blue="0.81175822019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="WEg-Hr-x7p">
+                        <rect key="frame" x="0.0" y="1148" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-9g-l1k" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="30" y="17.5" width="167" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0Kr-EH-v8C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Chat" image="chat">
+                                    <color key="titleColor" red="0.10680925099999999" green="0.49313348530000001" blue="0.87847155330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.069373719390000005" green="0.52844721080000001" blue="0.90984457730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="007-DE-gRd" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="217" y="17.5" width="167" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="wYY-NO-vO1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                <state key="normal" title="Call" image="call">
+                                    <color key="titleColor" red="0.1096391603" green="0.87827873229999998" blue="0.83529311419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.2113182247" green="0.85083067420000003" blue="0.81568574910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="007-DE-gRd" secondAttribute="trailing" constant="30" id="LoA-da-evr"/>
+                            <constraint firstItem="g1H-9g-l1k" firstAttribute="leading" secondItem="WEg-Hr-x7p" secondAttribute="leading" constant="30" id="Pf3-mi-17t"/>
+                            <constraint firstItem="g1H-9g-l1k" firstAttribute="centerY" secondItem="WEg-Hr-x7p" secondAttribute="centerY" id="R4N-LN-D5I"/>
+                            <constraint firstItem="007-DE-gRd" firstAttribute="width" secondItem="g1H-9g-l1k" secondAttribute="width" id="mc6-jp-VRq"/>
+                            <constraint firstItem="007-DE-gRd" firstAttribute="leading" secondItem="g1H-9g-l1k" secondAttribute="trailing" constant="20" id="np2-z8-un4"/>
+                            <constraint firstItem="007-DE-gRd" firstAttribute="centerY" secondItem="WEg-Hr-x7p" secondAttribute="centerY" id="tdo-QK-Uh1"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="z6m-5I-8Uj" firstAttribute="top" secondItem="CV7-ZD-pmD" secondAttribute="top" id="EDv-Ry-F2J"/>
+                <constraint firstItem="z6m-5I-8Uj" firstAttribute="leading" secondItem="CV7-ZD-pmD" secondAttribute="leading" id="aPL-wk-P2U"/>
+                <constraint firstItem="z6m-5I-8Uj" firstAttribute="bottom" secondItem="CV7-ZD-pmD" secondAttribute="bottom" id="iS5-rp-t92"/>
+                <constraint firstItem="z6m-5I-8Uj" firstAttribute="trailing" secondItem="CV7-ZD-pmD" secondAttribute="trailing" id="zOE-FH-XdN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CV7-ZD-pmD"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="brian" width="35" height="35"/>
+        <image name="call" width="25" height="25"/>
+        <image name="chat" width="19" height="22"/>
+    </resources>
+</document>

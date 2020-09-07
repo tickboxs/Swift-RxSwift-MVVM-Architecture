@@ -1,0 +1,60 @@
+/* 
+  i18n.strings
+  fujiko
+
+  Created by Charlie Cai on 14/3/20.
+  Copyright © 2020 tickboxs. All rights reserved.
+*/
+
+slogen_header = "Manage your tasks";
+slogen_description = "Organise and simplify your tasks. Collaborate with colleagues and send real-time messages.";
+
+login = "Login";
+signUp = "Sign Up";
+
+incorrect_email_format = "incorrect email format";
+incorrect_password_format = "incorrect password format.The password can only be 6 to 20 digits of English letters plus numbers and the following special characters!@#$&_-";
+email_or_password_wrong = "email or password wrong";
+
+email = "Email";
+password = "Password";
+name = "Name";
+code_resent = "Code Resent";
+success = "Success";
+
+dashboard = "Dashboard";
+statistics = "Statistics";
+calendar = "Calendar";
+profile = "Profile";
+settings = "Settings";
+
+search = "Search";
+notifications = "Notifications";
+message = "Message";
+invite = "Invite";
+add_project = "Add Project";
+add_task = "Add Task";
+
+verify_header = "Verify Account";
+verify_description = "Please enter the verification code we sent to your email address.";
+not_get_code = "Didn’t get the code?";
+resend = "Resend";
+
+role = "Role";
+team = "Team";
+status = "Status";
+member_since = "Member Since";
+chat = "Chat";
+call = "Call";
+
+reminders = "Reminders";
+dark_mode = "Dark Mode";
+help = "Help";
+privacy = "Privacy";
+terms_conditions = "Terms & Conditions";
+
+dismiss = "dismiss";
+
+not_listed = "Not listed?Input email address to invite people.";
+
+

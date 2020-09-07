@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProjectViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="addTaskButton" destination="gqI-De-r4w" id="9Fg-MI-g39"/>
+                <outlet property="createButton" destination="ebk-dT-O8z" id="ZzL-p5-8lQ"/>
+                <outlet property="peopleTextField" destination="QAY-6f-emb" id="PSA-MQ-pMP"/>
+                <outlet property="projectDescriptionTextView" destination="5LE-Us-NJk" id="OmH-oF-riJ"/>
+                <outlet property="projectNameTextField" destination="g6p-Y4-P0t" id="k6f-9J-Auy"/>
+                <outlet property="view" destination="ZGY-ZV-mPB" id="n1p-32-NTL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZGY-ZV-mPB" customClass="ScrollView" customModule="fujiko" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6p-Y4-P0t" customClass="TextField" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="33" y="64" width="348" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="348" id="X0s-RC-VX6"/>
+                        <constraint firstAttribute="height" constant="60" id="rht-d4-LV9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Invite People" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAY-6f-emb" customClass="TextField" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="33" y="144" width="348" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3bG-7M-Rv7"/>
+                        <constraint firstAttribute="width" constant="348" id="Byu-l2-EJl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-Us-NJk" customClass="TextView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="33" y="224" width="348" height="145"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="F5J-Ea-maG"/>
+                        <constraint firstAttribute="width" constant="348" id="LpT-Xo-T3q"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.82745885850000001" green="0.82744091750000004" blue="0.82744443420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.76864963770000005" green="0.76860648389999997" blue="0.77646559479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Project Description"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-De-r4w" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="33" y="389" width="348" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="348" id="HS5-Dw-mYl"/>
+                        <constraint firstAttribute="height" constant="60" id="jI8-Ek-L2U"/>
+                    </constraints>
+                    <state key="normal" title="Add Task" image="task">
+                        <color key="titleColor" red="0.76864963770000005" green="0.76860648389999997" blue="0.77646559479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebk-dT-O8z" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="125" y="762" width="164" height="60"/>
+                    <color key="backgroundColor" red="0.18062591550000001" green="0.84690737719999998" blue="0.81176429989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="N5P-2A-2Eb"/>
+                        <constraint firstAttribute="width" constant="164" id="dcU-pW-Rt7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                    <state key="normal" title="Create">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="gqI-De-r4w" firstAttribute="leading" secondItem="lCj-30-sEs" secondAttribute="leading" constant="33" id="2zH-St-wR8"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="trailing" secondItem="QAY-6f-emb" secondAttribute="trailing" constant="33" id="5rT-ih-3RU"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="trailing" secondItem="5LE-Us-NJk" secondAttribute="trailing" constant="33" id="7ok-NA-0TS"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="trailing" secondItem="ebk-dT-O8z" secondAttribute="trailing" constant="125" id="PqQ-cq-7eW"/>
+                <constraint firstItem="ebk-dT-O8z" firstAttribute="top" secondItem="gqI-De-r4w" secondAttribute="bottom" constant="313" id="Rc3-BA-pzb"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="trailing" secondItem="g6p-Y4-P0t" secondAttribute="trailing" constant="33" id="SZS-zH-eRB"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="bottom" secondItem="ebk-dT-O8z" secondAttribute="bottom" constant="40" id="V4L-VM-nDj"/>
+                <constraint firstItem="lCj-30-sEs" firstAttribute="trailing" secondItem="gqI-De-r4w" secondAttribute="trailing" constant="33" id="ZeG-kK-jcP"/>
+                <constraint firstItem="QAY-6f-emb" firstAttribute="leading" secondItem="lCj-30-sEs" secondAttribute="leading" constant="33" id="gVx-IL-0Va"/>
+                <constraint firstItem="g6p-Y4-P0t" firstAttribute="leading" secondItem="lCj-30-sEs" secondAttribute="leading" constant="33" id="gdD-Ox-77R"/>
+                <constraint firstItem="g6p-Y4-P0t" firstAttribute="top" secondItem="lCj-30-sEs" secondAttribute="top" constant="20" id="h4X-CZ-2lt"/>
+                <constraint firstItem="5LE-Us-NJk" firstAttribute="leading" secondItem="lCj-30-sEs" secondAttribute="leading" constant="33" id="lRx-2H-r6R"/>
+                <constraint firstItem="5LE-Us-NJk" firstAttribute="top" secondItem="QAY-6f-emb" secondAttribute="bottom" constant="20" id="nU7-qo-R9l"/>
+                <constraint firstItem="QAY-6f-emb" firstAttribute="top" secondItem="g6p-Y4-P0t" secondAttribute="bottom" constant="20" id="vbQ-DQ-Ooa"/>
+                <constraint firstItem="ebk-dT-O8z" firstAttribute="leading" secondItem="lCj-30-sEs" secondAttribute="leading" constant="125" id="xvm-zp-O9K"/>
+                <constraint firstItem="gqI-De-r4w" firstAttribute="top" secondItem="5LE-Us-NJk" secondAttribute="bottom" constant="20" id="zdc-zy-ju1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="lCj-30-sEs"/>
+            <viewLayoutGuide key="contentLayoutGuide" id="a1Z-Wa-I0r"/>
+            <viewLayoutGuide key="frameLayoutGuide" id="JW9-mZ-mSi"/>
+            <point key="canvasLocation" x="-359" y="154"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="task" width="47" height="47"/>
+    </resources>
+</document>

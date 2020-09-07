@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsItemView" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="percentageLabel" destination="q2V-uB-joC" id="z7Z-gx-Apu"/>
+                <outlet property="statusLabel" destination="oQB-2T-BuL" id="cuZ-2n-x20"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45.1%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2V-uB-joC" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="25" y="145" width="150" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="TIN-6r-WFf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN PROGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQB-2T-BuL" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="93" y="22" width="88" height="22"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="VIa-HX-6tD"/>
+                        <constraint firstAttribute="width" constant="88" id="cij-gL-HMe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q2V-uB-joC" secondAttribute="trailing" constant="25" id="0dA-5d-Wqa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="q2V-uB-joC" secondAttribute="bottom" constant="19" id="JNW-oM-ddb"/>
+                <constraint firstItem="oQB-2T-BuL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="Muu-iB-pIY"/>
+                <constraint firstAttribute="trailing" secondItem="oQB-2T-BuL" secondAttribute="trailing" constant="19" id="N2I-cp-EWd"/>
+                <constraint firstItem="q2V-uB-joC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="jMa-bt-z2V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="22" y="54"/>
+        </view>
+    </objects>
+</document>

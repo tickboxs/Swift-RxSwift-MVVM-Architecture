@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="notListedLabel" destination="g7j-AO-ZkU" id="DvU-vY-Kac"/>
+                <outlet property="searchBar" destination="HGW-Mp-aKs" id="TtP-nW-POq"/>
+                <outlet property="tableView" destination="bEW-0E-tVr" id="sG6-nl-oe3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="WKi-cV-e28"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not listed? Input email address to invite people." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-AO-ZkU" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="30" y="74" width="354" height="50.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HGW-Mp-aKs" customClass="SearchBar" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="30" y="154.5" width="354" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bEW-0E-tVr" customClass="TableView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="215.5" width="414" height="646.5"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HGW-Mp-aKs" secondAttribute="trailing" constant="30" id="2Dk-q9-kQm"/>
+                <constraint firstItem="g7j-AO-ZkU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="4A9-iS-HyN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bEW-0E-tVr" secondAttribute="bottom" id="AFL-u7-BGV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bEW-0E-tVr" secondAttribute="trailing" id="BPs-HK-kpu"/>
+                <constraint firstItem="bEW-0E-tVr" firstAttribute="top" secondItem="HGW-Mp-aKs" secondAttribute="bottom" constant="5" id="Whm-Jo-utr"/>
+                <constraint firstItem="HGW-Mp-aKs" firstAttribute="top" secondItem="g7j-AO-ZkU" secondAttribute="bottom" constant="30" id="dTX-Jx-gUK"/>
+                <constraint firstItem="g7j-AO-ZkU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="fYs-8D-a3X"/>
+                <constraint firstItem="bEW-0E-tVr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="peq-Wi-Bjq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g7j-AO-ZkU" secondAttribute="trailing" constant="30" id="vbF-HI-U71"/>
+                <constraint firstItem="HGW-Mp-aKs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="wup-7M-wJn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="104"/>
+        </view>
+    </objects>
+</document>

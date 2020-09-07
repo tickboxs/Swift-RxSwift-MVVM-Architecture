@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-fujikoTests/Pods-fujikoTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework
+${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework
+${BUILT_PRODUCTS_DIR}/SwiftyMocky/SwiftyMocky.framework

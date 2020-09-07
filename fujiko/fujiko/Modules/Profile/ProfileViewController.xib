@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="changePhotoButton" destination="fsh-Gk-iLv" id="qSe-pK-tyM"/>
+                <outlet property="editProfileButton" destination="1Dj-gt-wb9" id="d10-yQ-Y0t"/>
+                <outlet property="tableView" destination="deT-7y-L2Z" id="D2g-Ws-xja"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Td7-1L-eDQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="deT-7y-L2Z" customClass="TableView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="Ww9-tx-vzX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-mX-u6F">
+                                <rect key="frame" x="33" y="33" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Y7l-oM-h62"/>
+                                    <constraint firstAttribute="height" constant="100" id="qi7-PV-gSd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charlie Cai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we7-3M-dsw">
+                                <rect key="frame" x="158" y="43" width="231" height="34"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cai.charlie@hotmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOQ-Nj-6vE">
+                                <rect key="frame" x="158" y="82" width="231" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.60784906149999995" green="0.60783559080000005" blue="0.60783821339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsh-Gk-iLv" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="25" y="160" width="174.5" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Z4r-Nk-RYz"/>
+                                </constraints>
+                                <state key="normal" title="Change Photo" image="photo">
+                                    <color key="titleColor" red="0.81177234649999996" green="0.81175476310000005" blue="0.81175822019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                        <color key="value" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.81569403409999997" green="0.81567633149999996" blue="0.81567984819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dj-gt-wb9" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="214.5" y="160" width="174.5" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="qZr-Pq-drr"/>
+                                </constraints>
+                                <state key="normal" title="Edit Profile" image="edit">
+                                    <color key="titleColor" red="0.096026726069999999" green="0.48526209590000002" blue="0.87847203019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.01951578818" green="0.49304145570000002" blue="0.9059248567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-cj-LS5" customClass="SlidingTabBar" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="50" y="245" width="207" height="35"/>
+                                <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="DiP-uS-8ee"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Summary,Projects"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                        <color key="value" red="0.60393500330000005" green="0.60783344510000004" blue="0.60783833269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                        <color key="value" red="0.088838972150000001" green="0.48133838179999999" blue="0.87455040220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1Dj-gt-wb9" firstAttribute="width" secondItem="fsh-Gk-iLv" secondAttribute="width" id="1jB-M8-NbB"/>
+                            <constraint firstItem="Sh1-cj-LS5" firstAttribute="top" secondItem="fsh-Gk-iLv" secondAttribute="bottom" constant="20" id="8Sf-eU-YJ0"/>
+                            <constraint firstItem="yOQ-Nj-6vE" firstAttribute="top" secondItem="we7-3M-dsw" secondAttribute="bottom" constant="5" id="ICa-Dw-8TT"/>
+                            <constraint firstItem="fsh-Gk-iLv" firstAttribute="leading" secondItem="Ww9-tx-vzX" secondAttribute="leading" constant="25" id="Ozg-MF-SPU"/>
+                            <constraint firstAttribute="trailing" secondItem="1Dj-gt-wb9" secondAttribute="trailing" constant="25" id="Pzk-yb-o49"/>
+                            <constraint firstItem="we7-3M-dsw" firstAttribute="leading" secondItem="bTk-mX-u6F" secondAttribute="trailing" constant="25" id="SKb-gp-1MU"/>
+                            <constraint firstItem="yOQ-Nj-6vE" firstAttribute="leading" secondItem="bTk-mX-u6F" secondAttribute="trailing" constant="25" id="SvB-Gb-1Xa"/>
+                            <constraint firstItem="bTk-mX-u6F" firstAttribute="top" secondItem="Ww9-tx-vzX" secondAttribute="top" constant="33" id="VHu-ac-PEa"/>
+                            <constraint firstItem="fsh-Gk-iLv" firstAttribute="top" secondItem="bTk-mX-u6F" secondAttribute="bottom" constant="27" id="WRJ-Rf-Yod"/>
+                            <constraint firstItem="we7-3M-dsw" firstAttribute="top" secondItem="Ww9-tx-vzX" secondAttribute="top" constant="43" id="ZeT-1w-op6"/>
+                            <constraint firstItem="1Dj-gt-wb9" firstAttribute="centerY" secondItem="fsh-Gk-iLv" secondAttribute="centerY" id="a0U-Om-3Hq"/>
+                            <constraint firstAttribute="trailing" secondItem="we7-3M-dsw" secondAttribute="trailing" constant="25" id="crq-NZ-wCg"/>
+                            <constraint firstItem="1Dj-gt-wb9" firstAttribute="leading" secondItem="fsh-Gk-iLv" secondAttribute="trailing" constant="15" id="jy5-Yh-FOk"/>
+                            <constraint firstItem="bTk-mX-u6F" firstAttribute="leading" secondItem="Ww9-tx-vzX" secondAttribute="leading" constant="33" id="nCA-pa-0wa"/>
+                            <constraint firstItem="Sh1-cj-LS5" firstAttribute="leading" secondItem="Ww9-tx-vzX" secondAttribute="leading" constant="50" id="ohf-U1-onH"/>
+                            <constraint firstAttribute="trailing" secondItem="yOQ-Nj-6vE" secondAttribute="trailing" constant="25" id="tA1-d5-vef"/>
+                            <constraint firstItem="Sh1-cj-LS5" firstAttribute="width" secondItem="Ww9-tx-vzX" secondAttribute="width" multiplier="0.5" id="y7N-Gt-PtC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.81177234649999996" green="0.81175476310000005" blue="0.81175822019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="deT-7y-L2Z" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KVl-vH-bpS"/>
+                <constraint firstItem="deT-7y-L2Z" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="LYc-ey-i5K"/>
+                <constraint firstItem="deT-7y-L2Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XuF-q0-CEs"/>
+                <constraint firstItem="deT-7y-L2Z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="p73-CY-Xcz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="100" height="100"/>
+        <image name="edit" width="22" height="22"/>
+        <image name="photo" width="24" height="19"/>
+    </resources>
+</document>

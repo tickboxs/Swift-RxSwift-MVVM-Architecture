@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="logoutButton" destination="Wzl-9f-3ei" id="i5Z-M5-Tlv"/>
+                <outlet property="tableView" destination="Dyu-xX-dHe" id="Wxl-Zc-udi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="T5p-KY-sOc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dyu-xX-dHe" customClass="TableView" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="TfV-4P-tG0" customClass="View" customModule="fujiko" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="828" width="414" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzl-9f-3ei" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="60" y="80" width="294" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CBO-iR-dfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                <state key="normal" title="Log Out"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wzl-9f-3ei" firstAttribute="leading" secondItem="TfV-4P-tG0" secondAttribute="leading" constant="60" id="oDu-H4-vM6"/>
+                            <constraint firstAttribute="bottom" secondItem="Wzl-9f-3ei" secondAttribute="bottom" constant="60" id="qmF-1e-Wgq"/>
+                            <constraint firstAttribute="trailing" secondItem="Wzl-9f-3ei" secondAttribute="trailing" constant="60" id="tgQ-uT-Vfq"/>
+                        </constraints>
+                    </view>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dyu-xX-dHe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2gB-Ic-qyI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dyu-xX-dHe" secondAttribute="bottom" id="KJG-bt-gO1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dyu-xX-dHe" secondAttribute="trailing" id="jly-2h-A1J"/>
+                <constraint firstItem="Dyu-xX-dHe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rH4-u9-3pW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </view>
+    </objects>
+</document>

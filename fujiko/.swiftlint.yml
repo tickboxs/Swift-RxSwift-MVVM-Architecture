@@ -1,0 +1,26 @@
+excluded:  # 执行 linting 时忽略的路径。 优先级比 `included` 更高。
+  - Pods
+  - fujiko/Resources
+  - fujiko/Application/AppDelegate.swift
+  - fujiko/Application/SceneDelegate.swift
+
+disabled_rules: # 执行时排除掉的规则
+  - identifier_name    # 命名规则必须按照驼峰原则，与后台传的Json字段命名冲突，建议排除掉
+  - trailing_whitespace   # 每一个空行不能有空格，会与Xcode换行后自动对齐生成的空格冲突，建议排除掉
+
+force_cast: warning # 类型判断
+force_try: warning # try语句判断
+
+cyclomatic_complexity: 20 #代码复杂度,默认为10
+
+line_length:  # 单行代码长度,默认error 120
+  warning: 120
+  error: 200
+
+file_length:  # 文件长度
+  warning: 500
+  error: 1200
+
+function_body_length: # 函数体长度
+  warning: 100
+  error: 300

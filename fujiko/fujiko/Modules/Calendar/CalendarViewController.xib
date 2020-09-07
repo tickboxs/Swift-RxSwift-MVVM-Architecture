@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarHeaderView" destination="jae-Ps-4e3" id="QpG-VG-Tqj"/>
+                <outlet property="calendarView" destination="cgY-tG-ChO" id="HZp-Ok-8JI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LbV-S6-62a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-7f-tcb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="qRc-Fb-DGL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jae-Ps-4e3" customClass="CalendarHeaderView" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="30" y="30" width="354" height="85"/>
+                                <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="pTM-Nk-3T3"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cgY-tG-ChO" customClass="CalendarView" customModule="fujiko" customModuleProvider="target">
+                                <rect key="frame" x="30" y="115" width="354" height="265"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a7N-MT-dCR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98432296509999995" green="0.98430186509999995" blue="0.98430591820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jae-Ps-4e3" firstAttribute="leading" secondItem="qRc-Fb-DGL" secondAttribute="leading" constant="30" id="2dy-Ag-eKy"/>
+                            <constraint firstAttribute="trailing" secondItem="cgY-tG-ChO" secondAttribute="trailing" constant="30" id="5Lt-eb-OgO"/>
+                            <constraint firstItem="jae-Ps-4e3" firstAttribute="top" secondItem="qRc-Fb-DGL" secondAttribute="top" constant="30" id="83b-k7-xi9"/>
+                            <constraint firstAttribute="trailing" secondItem="jae-Ps-4e3" secondAttribute="trailing" constant="30" id="GRa-hE-LHG"/>
+                            <constraint firstItem="cgY-tG-ChO" firstAttribute="top" secondItem="jae-Ps-4e3" secondAttribute="bottom" id="Jgg-eL-ucz"/>
+                            <constraint firstItem="cgY-tG-ChO" firstAttribute="leading" secondItem="qRc-Fb-DGL" secondAttribute="leading" constant="30" id="h2N-Ov-Y4J"/>
+                            <constraint firstAttribute="bottom" secondItem="cgY-tG-ChO" secondAttribute="bottom" constant="20" id="jwu-Bb-eMg"/>
+                        </constraints>
+                    </view>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xu6-7f-tcb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2Iv-41-eJ7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xu6-7f-tcb" secondAttribute="bottom" id="Ouo-iB-RnT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xu6-7f-tcb" secondAttribute="trailing" id="eOh-tL-EQK"/>
+                <constraint firstItem="xu6-7f-tcb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mjp-6J-DBZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>

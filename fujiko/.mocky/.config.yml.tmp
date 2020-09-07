@@ -1,0 +1,12 @@
+sources:
+  include:
+  - ../fujiko
+templates:
+- /Users/charliecai/Desktop/job_seek/fujiko/fujiko/.mocky/.template.swifttemplate
+output: /Users/charliecai/Desktop/job_seek/fujiko/fujiko/.mocky/types.yaml
+args:
+  swiftyMocky:
+    import:
+    - Foundation
+    testable:
+    - fujiko

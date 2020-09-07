@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController" customModule="fujiko" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="7VU-HH-p2g" id="N9V-20-2sM"/>
+                <outlet property="signUpButton" destination="LVA-PW-g3l" id="Bdh-wD-3n3"/>
+                <outlet property="slogenDescription" destination="PvG-nc-Hr4" id="vsC-Vu-KrF"/>
+                <outlet property="slogenHeader" destination="B6O-Vi-Uz9" id="5cT-iB-8Zd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eq3-rV-8y7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rvQ-Cd-6b0">
+                    <rect key="frame" x="181" y="91" width="52" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="03X-Qf-PVR">
+                    <rect key="frame" x="44.5" y="276" width="325" height="244"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="325" id="78d-R8-MgS"/>
+                        <constraint firstAttribute="height" constant="244" id="ySl-f6-y2l"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organise and simplify your tasks. Collaborate with colleagues and send real-time messages." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvG-nc-Hr4" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="66" y="621" width="282" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="BcH-Ee-wja"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage your tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6O-Vi-Uz9" customClass="Label" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="66" y="559" width="282" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Eb6-4G-Ol1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VU-HH-p2g" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="214.5" y="759" width="163.5" height="60"/>
+                    <color key="backgroundColor" red="0.16852214930000001" green="0.78809171919999998" blue="0.75686258080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="1sf-QF-8TW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="1" green="0.99998790029999995" blue="0.9999920726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVA-PW-g3l" customClass="Button" customModule="fujiko" customModuleProvider="target">
+                    <rect key="frame" x="36" y="759" width="163.5" height="60"/>
+                    <color key="backgroundColor" red="0.99924820660000002" green="0.81624644989999995" blue="0.325309813" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Sbg-1J-9SJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" red="0.18854007119999999" green="0.24300271270000001" blue="0.30588948729999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.088838972150000001" green="0.48133838179999999" blue="0.87455040220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="03X-Qf-PVR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="64J-ST-cGI"/>
+                <constraint firstItem="PvG-nc-Hr4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="66" id="6Dw-s7-eAV"/>
+                <constraint firstItem="7VU-HH-p2g" firstAttribute="width" secondItem="LVA-PW-g3l" secondAttribute="width" id="7wy-N2-zfk"/>
+                <constraint firstItem="7VU-HH-p2g" firstAttribute="leading" secondItem="LVA-PW-g3l" secondAttribute="trailing" constant="15" id="9Fe-od-oBM"/>
+                <constraint firstItem="03X-Qf-PVR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FCu-vA-96d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PvG-nc-Hr4" secondAttribute="trailing" constant="66" id="GbO-se-5ly"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LVA-PW-g3l" secondAttribute="bottom" constant="43" id="HTY-PO-fdM"/>
+                <constraint firstItem="B6O-Vi-Uz9" firstAttribute="top" secondItem="03X-Qf-PVR" secondAttribute="bottom" constant="39" id="K17-qb-lXy"/>
+                <constraint firstItem="B6O-Vi-Uz9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="66" id="LEb-yi-Ctg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7VU-HH-p2g" secondAttribute="bottom" constant="43" id="Sof-WP-u8y"/>
+                <constraint firstItem="LVA-PW-g3l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="ULu-Cm-6lY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7VU-HH-p2g" secondAttribute="trailing" constant="36" id="eTa-U3-mSY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B6O-Vi-Uz9" secondAttribute="trailing" constant="66" id="fOn-h9-iSP"/>
+                <constraint firstItem="PvG-nc-Hr4" firstAttribute="top" secondItem="B6O-Vi-Uz9" secondAttribute="bottom" constant="27" id="glg-Cw-m7k"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro_background" width="305" height="225"/>
+        <image name="logo" width="56" height="35"/>
+    </resources>
+</document>

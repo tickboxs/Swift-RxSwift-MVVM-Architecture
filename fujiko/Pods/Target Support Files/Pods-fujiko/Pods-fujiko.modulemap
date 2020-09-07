@@ -1,0 +1,6 @@
+framework module Pods_fujiko {
+  umbrella header "Pods-fujiko-umbrella.h"
+
+  export *
+  module * { export * }
+}
